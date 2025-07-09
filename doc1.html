@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basil Binu | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="hero">
+     <div class="container">
+    <h1>Hi, I'm <span class="gradient-name">Basil Binu</span></h1>
+    <p>Software Developer | Python, Java, ML Enthusiast</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn filled">View Projects</a>
+      <a href="#contact" class="btn outlined">Get in Touch</a>
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://github.com/basi1l" target="_blank" aria-label="GitHub">
+      <img src="assets/icons/github.svg" alt="GitHub" />
+    </a>
+    <a href="https://linkedin.com/in/basil-binu" target="_blank" aria-label="LinkedIn">
+      <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
+    </a>
+    <a href="assets/resume/Basil_AI_resume.pdf" download class="resume-link">
+      <img src="assets/icons/download.svg" alt="Resume" />
+      Resume
+    </a>
+  </div>
+
+    </div>
+  </header>
+
+  <nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">BASIL</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>B.Tech graduate in Information Technology from RSET, with a CGPA of 8.25. Passionate about building full-stack web apps, ML-based solutions, and exploring cloud tools. Skilled in Python, Java, MySQL, and modern dev tools.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <img src="assets/projects/parkinsights.png" alt="ParkInsights Preview" class="project-thumb" />
+          <h3>ParkInsights</h3>
+          <p>ML model to detect Parkinson’s disease. Flask API + responsive frontend.</p>
+          <p><strong>Tech:</strong> Python, Flask, Neural Networks</p>
+          <a href="https://github.com/basi1l/Parkinsights-parkinson-s-disease-detection" target="_blank">GitHub</a>
+        </div>
+        <div class="project">
+          <img src="assets/projects/backlog-tracker.png" alt="Backlog Tracker Preview" class="project-thumb" />
+          <h3>Backlog Tracker</h3>
+          <p>Full-stack web app for academic backlog tracking. Uses PHP & MySQL.</p>
+          <p><strong>Tech:</strong> PHP, MySQL, HTML/CSS</p>
+          <a href="https://github.com/basi1l/Backlog-Tracker" target="_blank">GitHub</a>
+        </div>
+        <div class="project">
+          <img src="assets/projects/parcel-tracker.png" alt="Parcel Tracker Preview" class="project-thumb" />
+          <h3>Parcel Tracker</h3>
+          <p>Spring Boot + React app with JWT auth. Built during AWS internship.</p>
+          <p><strong>Tech:</strong> Spring Boot, React, JWT</p>
+          <a href="https://github.com/basi1l/techeazy-aws-internship" target="_blank">GitHub</a>
+        </div>
+        <div class="project">
+          <img src="assets/projects/glr-streamlit.png" alt="GLR Report Generator Preview" class="project-thumb" />
+          <h3>GLR Report Generator</h3>
+          <p>Automated report generator using Streamlit and LLM prompts for text analysis.</p>
+          <p><strong>Tech:</strong> Python, Streamlit, OpenAI API</p>
+          <a href="https://github.com/basi1l/GLR-Report-Generator-with-Streamlit-LLM" target="_blank">GitHub</a>
+        </div>
+        <div class="project">
+          <img src="assets/projects/change-detection.png" alt="Change Detection Project Preview" class="project-thumb" />
+          <h3>Change Detection in Images</h3>
+          <p>Detects visual changes between images using computer vision models.</p>
+          <p><strong>Tech:</strong> Python, OpenCV</p>
+          <a href="https://github.com/basi1l/Change-Detection-in-Images" target="_blank">GitHub</a>
+        </div>
+        <div class="project">
+          <img src="assets/projects/rgb-thermal-overlay.png" alt="RGB Thermal Overlay Preview" class="project-thumb" />
+          <h3>RGB Thermal Image Overlay</h3>
+          <p>Overlay of RGB and thermal images to enhance perception of heat data.</p>
+          <p><strong>Tech:</strong> Python, OpenCV</p>
+          <a href="https://github.com/basi1l/RGB-Thermal-Image-Overlay" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <p><strong>Cyber Security Intern, NeST Cyber Campus</strong><br />
+        Enhanced cloud security using Bash scripting in an Agile team.</p>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+  <div class="container">
+    <h2>Education</h2>
+    <div class="education-grid">
+      <div class="edu-card">
+        <h3>B.Tech in Information Technology</h3>
+        <p><strong>Rajagiri School of Engineering & Technology (RSET)</strong><br>Kerala, India | Nov 2020 – Jul 2024</p>
+        <p>CGPA: 8.25</p>
+        <p>Studied programming, web development, data structures, cloud tools, and machine learning. Completed academic projects in Python,Flask,ML,PHP,MySQL.</p>
+      </div>
+      <div class="edu-card">
+        <h3>Higher Secondary Education – Computer Science</h3>
+        <p><strong>Cardinal HSS Thrikkakara</strong><br>Kerala, India | Jul 2018 – May 2020</p>
+        <p>Percentage: 94.08%</p>
+        <p>Gained early exposure to logic building, Java programming, and problem-solving through lab work and project-based learning.</p>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <img src="assets/certificates/thumbs/python-course.png" alt="Python Course" />
+          <p class="cert-title">Python Developer Training</p>
+          <a href="assets/certificates/python-course.pdf" target="_blank">View Certificate</a>
+        </div>
+        <div class="cert-card">
+          <img src="assets/certificates/thumbs/github-workshop.png" alt="GitHub Workshop" />
+          <p class="cert-title">Git & GitHub Workshop</p>
+          <a href="assets/certificates/github-workshop.pdf" target="_blank">View Certificate</a>
+        </div>
+        <div class="cert-card">
+          <img src="assets/certificates/thumbs/steag.png" alt="STEAG Internship" />
+          <p class="cert-title">STEAG – Internship Program</p>
+          <a href="assets/certificates/steag-chatbot.pdf" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+  <div class="container">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      
+      <!-- Programming Languages -->
+      <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <div class="skill-item">
+          <img src="assets/icons/python.svg" alt="Python" />
+          <div class="skill-name">Python</div>
+        </div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+
+        <div class="skill-item">
+          <img src="assets/icons/java.svg" alt="Java" />
+          <div class="skill-name">Java</div>
+        </div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+
+        <div class="skill-item">
+          <img src="assets/icons/html5.svg" alt="HTML/CSS/JS" />
+          <div class="skill-name">HTML/CSS/JS</div>
+        </div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+      </div>
+
+      <!-- Databases & Web -->
+      <div class="skill-category">
+        <h3>Databases & Web</h3>
+        <div class="skill-item">
+          <img src="assets/icons/mysql.svg" alt="MySQL" />
+          <div class="skill-name">MySQL</div>
+        </div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 75%;"></div></div>
+
+        <div class="skill-item">
+          <img src="assets/icons/mongodb.svg" alt="MongoDB" />
+          <div class="skill-name">MongoDB</div>
+        </div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 65%;"></div></div>
+
+        <div class="skill-item">
+          <img src="assets/icons/flask.svg" alt="Flask" />
+          <div class="skill-name">Flask</div>
+        </div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;"></div></div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Machine Learning</h3>
+        <div class="skill-item">
+          <img src="assets/icons/supervised.svg" alt="Supervised Learning">
+          <div class="skill-name">Supervised Learning</div>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+        
+        <div class="skill-item">
+          <img src="assets/icons/unsupervised.svg" alt="Deep Learning">
+          <div class="skill-name">Deep Learning</div>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+        
+        <div class="skill-item">
+          <img src="assets/icons/nlp.svg" alt="NLP">
+          <div class="skill-name">NLP</div>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+        
+      </div>
+
+
+      <!-- Tools & Version Control -->
+      <div class="skill-category">
+        <h3>Tools & Version Control</h3>
+        <div class="skill-item">
+          <img src="assets/icons/github.svg" alt="Git" />
+          <div class="skill-name">Git & GitHub</div>
+        </div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+
+        <div class="skill-item">
+          <img src="assets/icons/vscode.svg" alt="VS Code" />
+          <div class="skill-name">VS Code</div>
+        </div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:basilmukkadackal@gmail.com">basilmukkadackal@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/basi1l" target="_blank">github.com/basi1l</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/basil-binu" target="_blank">linkedin.com/in/basil-binu</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Basil Binu</p>
+  </footer>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('open');
+  });
+</script>
+
+</body>
+
+</html>
