@@ -45,13 +45,13 @@
       <span></span><span></span><span></span>
     </div>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" onclick="scrollToSection('about')">About Me</a></li>
+      <li><a href="#" onclick="scrollToSection('projects')">Projects</a></li>
+      <li><a href="#" onclick="scrollToSection('exxperience')">Experience</a></li>
+      <li><a href="#" onclick="scrollToSection('education')">Education</a></li>
+      <li><a href="#" onclick="scrollToSection('certifications')">Certifications</a></li>
+      <li><a href="#" onclick="scrollToSection('skills')">Skills</a></li>
+      <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -280,6 +280,24 @@
     navLinks.classList.toggle('active');
     menuToggle.classList.toggle('open');
   });
+
+
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      history.replaceState(null, '', '/'); // Remove hash from URL
+    }
+  }
+
+  // Scroll to top on refresh (if URL has a hash)
+  window.onload = function () {
+    if (window.location.hash) {
+      history.replaceState(null, '', '/');
+      window.scrollTo(0, 0);
+    }
+  };
+
 </script>
 
 </body>
