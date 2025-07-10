@@ -45,13 +45,13 @@
       <span></span><span></span><span></span>
     </div>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#" onclick="scrollToSection('about')">About Me</a></li>
-      <li><a href="#" onclick="scrollToSection('projects')">Projects</a></li>
-      <li><a href="#" onclick="scrollToSection('experience')">Experience</a></li>
-      <li><a href="#" onclick="scrollToSection('education')">Education</a></li>
-      <li><a href="#" onclick="scrollToSection('certifications')">Certifications</a></li>
-      <li><a href="#" onclick="scrollToSection('skills')">Skills</a></li>
-      <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
+      <a href="#about" onclick="event.preventDefault(); scrollToSection('about')">About Me</a>
+      <a href="#projects" onclick="event.preventDefault(); scrollToSection('projects')">Projects</a>
+      <a href="#experience" onclick="event.preventDefault(); scrollToSection('experience')">Experience</a>
+      <a href="#education" onclick="event.preventDefault(); scrollToSection('education')">Education</a>
+      <a href="#Certification" onclick="event.preventDefault(); scrollToSection('Certification')">Certifications</a>
+      <a href="#skills" onclick="event.preventDefault(); scrollToSection('skills')">Skills</a>
+      <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')">Contact</a>
     </ul>
   </div>
 </nav>
@@ -282,16 +282,21 @@
   });
 
 
-  function scrollToSection(id) {
+function scrollToSection(id) {
   const section = document.getElementById(id);
   if (section) {
     section.scrollIntoView({ behavior: 'smooth' });
 
-    // Replace only the hash, keep the full path (important for GitHub Pages)
+    // Update hash while keeping full GitHub Pages path
     const newUrl = window.location.pathname + '#' + id;
     history.replaceState(null, '', newUrl);
+
+    // Optional: close mobile menu after click
+    navLinks.classList.remove('active');
+    menuToggle.classList.remove('open');
   }
 }
+
 
 
 </script>
