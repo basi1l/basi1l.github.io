@@ -283,20 +283,16 @@
 
 
   function scrollToSection(id) {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-      history.replaceState(null, '', '/'); // Remove hash from URL
-    }
-  }
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
 
-  // Scroll to top on refresh (if URL has a hash)
-  window.onload = function () {
-    if (window.location.hash) {
-      history.replaceState(null, '', '/');
-      window.scrollTo(0, 0);
-    }
-  };
+    // Replace only the hash, keep the full path (important for GitHub Pages)
+    const newUrl = window.location.pathname + '#' + id;
+    history.replaceState(null, '', newUrl);
+  }
+}
+
 
 </script>
 
